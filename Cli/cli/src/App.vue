@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <Child />
+    <Prent />    
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
-    <Prent />
+    <Child />
   </div>
 </template>
 
