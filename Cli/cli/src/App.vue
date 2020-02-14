@@ -3,7 +3,7 @@
     <Child />
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
-    <Parent />
+    <Prent />
   </div>
 </template>
 
