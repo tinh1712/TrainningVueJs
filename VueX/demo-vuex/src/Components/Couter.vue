@@ -14,10 +14,10 @@ export default {
     },
     methods: {
         increment () {
-            this.$store.state.result++;
+            this.$store.dispatch('increment', 1)
         },
         decrement () {
-            this.$store.state.result--;
+            this.$store.dispatch('decrement', 2)
         }
     }
 }
