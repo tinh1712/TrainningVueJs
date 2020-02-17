@@ -1,13 +1,25 @@
 <template>
-    <h1>{{ textParent }}</h1>
+<div>
+    <app-user v-bind:name="name"></app-user>
+    <button v-on:click="change">Change</button>
+</div>
 </template>
 
 <script>
+import Child from './Child';
 export default {
-    data () {
+    data() {
         return {
-            textParent: 'Parent'
+            name: 'Parent'
         }
+    },
+    methods: {
+        change() {
+            this.name = 'Child';
+        }
+    },
+    components: {
+        appUser: Child,
     }
 }
 </script>

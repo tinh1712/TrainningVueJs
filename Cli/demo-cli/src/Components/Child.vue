@@ -1,13 +1,9 @@
 <template>
-    <h1>{{ textChild }}</h1>
+    <p>My name: {{ name }}</p>
 </template>
 
 <script>
 export default {
-    data () {
-        return {
-            textChild: 'Child'
-        }
-    }
+    props: ['name'],
 }
 </script>

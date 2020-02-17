@@ -1,15 +1,13 @@
 <template>
   <div id="app">
-    <Parent />
+    <app-user-detail></app-user-detail>
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
-    <Child />
   </div>
 </template>
 
 <script>
 import Parent from './Components/Parent.vue'
-import Child from './Components/Child'
 export default {
   name: 'app',
   data () {
@@ -18,8 +16,7 @@ export default {
     }
   },
   components: {
-    Parent,
-    Child
+    appUserDetail: Parent,
   }
 }
 </script>
